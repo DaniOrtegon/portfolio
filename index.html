@@ -607,6 +607,18 @@
       gap: 2.5rem;
       align-items: center;
     }
+    /* Compact card layout (no .featured): apila texto y diagrama en vertical */
+    .project-card:not(.featured) .featured-inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .project-card:not(.featured) .project-name {
+      font-size: 1.25rem;
+    }
+    .project-card:not(.featured) .project-desc {
+      font-size: .8rem;
+      line-height: 1.7;
+    }
     .arch-visual {
       background: rgba(0,0,0,.3);
       border: 1px solid var(--border);
@@ -1126,13 +1138,8 @@
         </div>
       </a>
 
-
-    </div>
-  </div>
-</section>
-
-  <!-- KubeNet → AWS -->
-      <a class="project-card glass featured" href="https://github.com/DaniOrtegon/KubeNet" target="_blank" rel="noopener">
+      <!-- KubeNet → AWS -->
+      <a class="project-card glass featured" href="https://github.com/DaniOrtegon/KubeNet---AWS" target="_blank" rel="noopener">
         <div class="featured-inner">
           <div>
             <div class="project-tag-row">
@@ -1166,6 +1173,10 @@
           </div>
         </div>
       </a>
+
+    </div>
+  </div>
+</section>
 
 <!-- ══════════ EXPERIENCE ══════════ -->
 <section id="experience">
